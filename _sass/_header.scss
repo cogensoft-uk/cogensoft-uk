@@ -1,0 +1,379 @@
+html {
+  overflow:   scroll;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* make scrollbar transparent */
+}
+
+header {
+  position: relative;
+  top: 70px;
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-image: url('/img/header-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  .container {
+    height: 450px;
+    max-height: 605px;
+    overflow: visible;
+    padding: 0;
+    .connecting-text {
+      position: absolute;
+      z-index: 99;
+      top: 5px;
+      left: 5px;
+      font-size: 36px;
+      font-weight: bold;
+      color: #fed136;
+      &::selection {
+        background: transparent;
+      }
+      .connecting-text {
+        .invisible {
+          visibility: hidden;
+        }
+      }
+    }
+    .flex-grid {
+      padding-top: 40px;
+    }
+    .block {
+      height: 29%;
+      overflow: hidden;
+      .header-center-image {
+        position: fixed;
+      }
+      .icon-wrapper{
+        list-style: none;
+        padding-left: 0;
+        left: -50px;
+        .header-icon {
+          padding: 30px;
+          display: inline-block;
+          float: left;
+          .fa-stack {
+            font-size: 1.8em;
+          }
+          .fa-inverse {
+            color: $gray-100;
+          }
+          .icon-text {
+            color: $secondary-dark;
+            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+          }
+          &.inactive {
+            display: none;
+          }
+        }
+      }
+      &.first {
+        .icon-wrapper{
+          left: calc(0px - (420px - 100%)/2 - 140px);
+          z-index: 9;
+          .header-icon {
+            width: 140px;
+          }
+          .icon-text {
+            z-index: 10;
+            position: relative;
+            margin-top: 5px;
+            color: $gray-100;
+            &.add-background {
+              background-color: #232227;
+            }
+          }
+        }
+      }
+      &.last {
+        .icon-wrapper{
+          margin: auto;
+          width: 100%;
+          .header-icon {
+            width: 88px;
+            float: none;
+            clear: both;
+            padding: 30px 0;
+            vertical-align: top;
+            height: 78px;
+            .icon-text {
+              font-size: 12px;
+              color: white;
+              background-color: rgba(0,0,0,0.3);
+              min-height: 34px;
+              border-radius: 3px;
+              padding: 2px;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+      .logo-wrapper {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100px;
+        .header-center-image {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $breakpoints-ti) {
+  header {
+    .container {
+      height: 570px;
+      .block {
+        .icon-wrapper {
+          .header-icon {
+          }
+        }
+        &.first {
+          .icon-wrapper {
+            position: relative;
+            .header-icon {
+              width: 140px;
+            }
+          }
+        }
+        &.last {
+          .icon-wrapper {
+            .header-icon {
+              width: 88px;
+            }
+          }
+        }
+        .logo-wrapper {
+          .header-center-image {
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: $breakpoints-tism) {
+  header {
+    .container {
+      .block {
+        .logo-wrapper {
+          .header-center-image {
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: $breakpoints-sm) {
+  header {
+    .container {
+      height: 360px;
+      overflow: hidden;
+      padding: 0 15px;
+      .connecting-text {
+        font-size: 36px;
+        width: 300px;
+        margin: auto;
+        position: relative;
+        height: 0;
+        top: -5px;
+        .text {
+          position: absolute;
+          left: 50px;
+        }
+      }
+      .flex-grid {
+        padding-top: 10px;
+      }
+      .block {
+        height: auto;
+        .image-helper {
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle;
+        }
+        .icon-wrapper {
+          .header-icon {
+            padding: 15px 0;
+            display: block;
+            float: none;
+            .fa-inverse {
+              color: $black;
+            }
+          }
+
+        }
+        &.first {
+          .icon-wrapper {
+            left: 0;
+            top: calc(0px - (315px - 100%)/2 - 105px);
+            .header-icon {
+              width: 170px;
+            }
+            .icon-text {
+              z-index: 0;
+              position: inherit;
+              background-color: transparent;
+              margin-top: 0;
+              color: $black;
+              &.add-background {
+                background-color: transparent;
+              }
+            }
+          }
+        }
+        &.last {
+          .icon-wrapper {
+            left: 0;
+            position: relative;
+            top: calc((100% - 234px)/2);
+            height: 100%;
+            .header-icon {
+              width: 100%;
+              max-width: inherit;
+              padding: 0;
+              height: 78px;
+              .icon-text {
+                background-color: initial;
+                min-height: inherit;
+                border-radius: unset;
+                padding: inherit;
+                margin-top: inherit;
+              }
+            }
+          }
+        }
+        .logo-wrapper {
+          left: 8px;
+          top: inherit;
+          .header-center-image {
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: $breakpoints-md) {
+  header {
+    .container {
+      height: 475px;
+      .connecting-text {
+        font-size: 48px;
+        top: 15px;
+        .text {
+          left: 0;
+        }
+      }
+      .block {
+        .icon-wrapper {
+          .header-icon {
+            .fa-stack {
+              font-size: 2em;
+            }
+          }
+        }
+        &.first {
+          .icon-wrapper {
+            top: calc(0px - (351px - 100%)/2 - 117px);
+          }
+        }
+        .logo-wrapper {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          .header-center-image {
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: $breakpoints-lg) {
+  header {
+    .container {
+      height: 600px;
+      .connecting-text {
+        font-size: 48px;
+        top: 35px;
+      }
+      .block {
+        .icon-wrapper {
+          .header-icon {
+            .fa-stack {
+              font-size: 3em;
+            }
+          }
+        }
+        &.first {
+          .icon-wrapper {
+            top: calc(0px - (423px - 100%)/2 - 141px);
+            .icon-text {
+              font-size: 15px;
+            }
+          }
+        }
+        &.last {
+          .icon-wrapper {
+            top: calc((100% - 390px)/2);
+            .header-icon {
+              height: 130px;
+              .icon-text {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: $breakpoints-xl) {
+  header {
+    top: 90px;
+    .container {
+      height: 600px;
+      .connecting-text {
+        top: 15px;
+      }
+      .block {
+        .icon-wrapper {
+          .header-icon {
+            .fa-stack {
+              font-size: 4.5em;
+            }
+          }
+        }
+        &.first {
+          .icon-wrapper {
+            top: calc(0px - (570px - 100%)/2 - 190px);
+            .icon-text {
+              font-size: 18px;
+            }
+          }
+        }
+        &.last {
+          .icon-wrapper {
+            top: calc((100% - 570px)/2);
+            .header-icon {
+              height: 190px;
+              .icon-text {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

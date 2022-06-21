@@ -1,0 +1,31 @@
+#technology {
+  .partners {
+    .logo-container {
+      text-align: center;
+      display: block;
+      height: 200px;
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 200px;
+        max-height: 150px;
+      }
+    }
+
+  }
+}
+@media (min-width: $breakpoints-xs) {
+}
+@media (min-width: $breakpoints-sm) {
+}
+@media (min-width: $breakpoints-md) {
+  #technology {
+    .partners {
+      padding-top: 50px;
+    }
+  }
+}
+@media (min-width: $breakpoints-lg) {
+}
+@media (min-width: $breakpoints-xl) {
+}

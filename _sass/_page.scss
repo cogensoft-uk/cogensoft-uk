@@ -1,0 +1,224 @@
+body {
+    overflow-x: hidden;
+    font-family: $body-font;
+    color: $secondary-dark;
+}
+
+.text-muted {
+    color: $muted;
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: $primary;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: $secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: $primary-font;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+.bg-darkest-gray {
+    background-color: #222;
+}
+
+.btn-primary {
+    border-color: $primary;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    font-weight: 700;
+    color: #fff;
+    background-color: $primary;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: $primary;
+    color: #fff;
+    background-color: $secondary;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: $primary;
+    background-color: $primary;
+}
+
+.btn-primary .badge {
+    color: $primary;
+    background-color: #fff;
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: $primary;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: $primary;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: $primary;
+    color: #fff;
+    background-color: $secondary;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: $primary;
+    background-color: $primary;
+}
+
+.btn-xl .badge {
+    color: $primary;
+    background-color: #fff;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: $primary;
+}
+
+::selection {
+    text-shadow: none;
+    background: $primary;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+.image-align-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+body {
+    webkit-tap-highlight-color: $primary;
+}
+
+.container {
+    width: 320px;   //Extend bootstrap container model
+}
+@media (min-width: $breakpoints-ti) {
+    .container {
+        width: 375px;   //Extend bootstrap container model
+    }
+}
+@media (min-width: $breakpoints-tism) {
+    .container {
+        width: 410px;   //Extend bootstrap container model
+    }
+}
+@media (min-width: $breakpoints-sm) {
+    .container {
+        width: 560px;   //Extend bootstrap container model
+    }
+}
+@media (min-width: $breakpoints-md) {
+}
+@media (min-width: $breakpoints-lg) {
+}
+@media (min-width: $breakpoints-xl) {
+}

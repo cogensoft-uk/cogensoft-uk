@@ -1,0 +1,28 @@
+.flex-grid {
+  display: block;
+  height: 100%;
+}
+
+@media (min-width: $breakpoints-ti) {
+}
+@media (min-width: $breakpoints-sm) {
+  .flex-grid {
+    display: flex;
+    padding: 10px;
+  }
+  .col {
+    flex: 1;
+  }
+  .col-75 {
+    flex: 0.75;
+  }
+  .col-150 {
+    flex: 1.5;
+  }
+}
+@media (min-width: $breakpoints-md) {
+}
+@media (min-width: $breakpoints-lg) {
+}
+@media (min-width: $breakpoints-xl) {
+}

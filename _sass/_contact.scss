@@ -1,0 +1,81 @@
+section#contact {
+  background-color: #222;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .contact-methods {
+    padding-bottom: 30px;
+  }
+
+  .contact-method {
+    color: $muted;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    &.primary {
+      color: $primary;
+    }
+  }
+}
+
+section#contact .section-heading {
+  color: $white;
+}
+
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+  color: $secondary-dark;
+}
+
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+  height: 236px;
+}
+
+section#contact .form-control:focus {
+  border-color: $secondary-dark;
+  box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 700;
+  color: $muted;
+}
+
+section#contact:-moz-placeholder {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 700;
+  color: $muted;
+}
+
+section#contact::-moz-placeholder {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 700;
+  color: $muted;
+}
+
+section#contact:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 700;
+  color: $muted;
+}
+
+section#contact .text-danger {
+  color: $primary;
+}

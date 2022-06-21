@@ -1,0 +1,50 @@
+<!-- Services Section -->
+    <section id="technology" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Technology</h2>
+                    <h3 class="section-subheading text-muted">We connect with the latest web technologies...</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                {% for technology in site.technologies %}
+                    <div class="col-sm-6 col-md-3">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="{{ technology.icon }} fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">{{ technology.heading }}</h4>
+                        <p class="text-muted">{{ technology.text }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <aside class="partners bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <a href="https://magento.com" class="logo-container" target="_blank">
+                            <span class="image-align-helper"></span><img src="/img/partners/magento.png" class="logo img-responsive img-centered" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <a href="https://laravel.com" class="logo-container" target="_blank">
+                            <span class="image-align-helper"></span><img src="/img/partners/laravel.png" class="logo img-responsive img-centered" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <a href="https://wordpress.com" class="logo-container" target="_blank">
+                            <span class="image-align-helper"></span><img src="/img/partners/wordpress.png" class="logo img-responsive img-centered" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <a href="https://codeigniter.com" class="logo-container" target="_blank">
+                            <span class="image-align-helper"></span><img src="/img/partners/code-ignighter.png" class="logo img-responsive img-centered" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>

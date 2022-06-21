@@ -1,0 +1,25 @@
+.carousel {
+  width: 9999px;
+  .carousel-panel {
+    margin: auto;
+    overflow: hidden;
+    &:not(.active) {
+      opacity: 0.4;
+    }
+  }
+}
+
+@media (min-width: $breakpoints-ti) {
+}
+@media (min-width: $breakpoints-sm) {
+  .carousel {
+    width: inherit;
+  }
+}
+@media (min-width: $breakpoints-md) {
+
+}
+@media (min-width: $breakpoints-lg) {
+}
+@media (min-width: $breakpoints-xl) {
+}

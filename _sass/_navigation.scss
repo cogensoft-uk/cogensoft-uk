@@ -1,0 +1,239 @@
+.navbar-default {
+  border-color: transparent;
+  background-color: #222;
+}
+
+.navbar-default .navbar-brand {
+  font-family: $nav-font;
+  color: $primary;
+  z-index: 9;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: $secondary;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .nav li a {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  -webkit-transition: all ease .35s;
+  -moz-transition: all ease .35s;
+  transition: all ease .35s;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+  outline: 0;
+  color: $primary;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  border-radius: 0;
+  color: #fff;
+  background-color: $primary;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #fff;
+  background-color: $secondary;
+}
+
+@media(min-width: $breakpoints-md) {
+  .navbar-default {
+    padding: 25px 0;
+    border: 0;
+    background-color: transparent;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+  }
+
+  .navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .navbar-default .navbar-nav>.active>a {
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: $breakpoints-xs) {
+  #navigation-container {
+    z-index: 110;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 5px 10px 10px 10px;
+    background-color: $banner-background;
+  }
+  .navigation-piece {
+    float: right;
+    height: 61px;
+    &.line {
+      width: 520px;
+    }
+    &.hidden {
+      display: none;
+    }
+  }
+  .navbar-default {
+    padding: 10px 0;
+    height: 70px;
+    .container {
+      width: 100%;
+      position: fixed;
+      top: 10px;
+      margin: 0;
+      .navbar-header {
+        .navigation-piece.mobile.line {
+          width: 68px;
+        }
+      }
+      .navbar-mobile-connector {
+        position: fixed;
+        z-index: 1;
+        right: 53px;
+        top: 62px;
+        height: 340px;
+        width: 100px;
+        .navigation-piece.mobile {
+          height: auto;
+          width: 100px;
+        }
+      }
+    }
+    .navbar-brand {
+      position: fixed;
+      left: 15px;
+      font-size: 1.5em;
+      padding: 10px;
+      .logo {
+        height: 36px;
+      }
+    }
+    .navbar-toggle {
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding: 5px 10px 10px 10px;
+      margin: 0;
+      height: 70px;
+      border: 0;
+      &.collapsed {
+        .navigation-piece.mobile:not(.collaped-icon) {
+          display: none;
+        }
+        .navigation-piece.mobile.collaped-icon {
+          display: block;
+        }
+      }
+      &:not(.collapsed) {
+        .navigation-piece.mobile.collaped-icon {
+          display: none;
+        }
+      }
+    }
+    .navbar-collapse {
+      background-color: $banner-background;
+      top: 70px;
+      position: fixed;
+      right: 0;
+      width: 180px;
+      border: 0;
+      .navbar-nav {
+        font-size: 13px;
+        > li {
+          z-index: 2;
+          padding: 10px 10px 10px 30px;
+          > a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: $breakpoints-sm) {
+}
+@media (min-width: $breakpoints-md) {
+  .navbar-default {
+    height: 90px;
+    .container {
+      right: 80px;
+    }
+    .navbar-brand {
+      top: 10px;
+    }
+    .navbar-collapse {
+      position: relative;
+      background-color: inherit;
+      top: 0;
+      width: auto;
+      .navbar-nav {
+        > li {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $breakpoints-lg) {
+  #navigation-container {
+    height: 90px;
+  }
+  .navigation-piece {
+    height: 70px;
+  }
+  .navbar-default {
+    .container {
+      right: 100px;
+    }
+    .navbar-collapse {
+      .navbar-nav {
+        font-size: 15px;
+        > li > a {
+          padding-top: 13px;
+          padding-bottom: 13px;
+        }
+      }
+    }
+    .navbar-brand {
+      top: 0;
+      .logo {
+        height: 70px;
+      }
+    }
+  }
+}
+@media (min-width: $breakpoints-xl) {
+}
+
+
+
+
+
+
+
+

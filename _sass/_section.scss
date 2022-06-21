@@ -1,0 +1,43 @@
+section {
+  padding: 100px 0;
+}
+
+section h2.section-heading {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+section h3.section-subheading {
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media(min-width:768px) {
+  section {
+    padding: 150px 0 100px 0;
+    &:not(#about) {
+      padding-top: 50px;
+    }
+  }
+}
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+@media (min-width: $breakpoints-xs) {
+}
+@media (min-width: $breakpoints-sm) {
+}
+@media (min-width: $breakpoints-md) {
+}
+@media (min-width: $breakpoints-lg) {
+}
+@media (min-width: $breakpoints-xl) {
+}

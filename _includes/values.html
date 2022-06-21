@@ -1,0 +1,23 @@
+<!-- Team Section -->
+    <section id="values">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Values</h2>
+                    <h3 class="section-subheading text-muted">We believe code should connect with core values...</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                {% for value in site.values %}
+                    <div class="col-sm-6 col-md-3">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa {{ value.icon }} fa-stack-1x fa-inverse"></i>
+                            </span>
+                        <h4 class="service-heading">{{ value.heading }}</h4>
+                        <p class="text-muted">{{ value.text }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>

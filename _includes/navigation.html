@@ -1,0 +1,57 @@
+<!-- Navigation -->
+<nav id="navigation-container">
+    <img class="navigation-piece icon" src="/img/cogensoft-icons/cogensoft-nav-0.png">
+    <img class="navigation-piece line hidden" src="/img/cogensoft-icons/cogensoft-nav-line.png">
+    <img class="navigation-piece connector hidden" src="/img/cogensoft-icons/cogensoft-nav-up.png">
+
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <img class="navigation-piece mobile icon" src="/img/cogensoft-icons/cogensoft-mob-nav-0.png">
+                    <img class="navigation-piece mobile collaped-icon" src="/img/cogensoft-icons/cogensoft-mob-nav-0.png">
+                    {%if page.url == "/" %}
+                        <img class="navigation-piece mobile line hidden" src="/img/cogensoft-icons/cogensoft-mob-nav-line.png">
+                        <img class="navigation-piece mobile curve hidden" src="/img/cogensoft-icons/cogensoft-mob-nav-curve.png">
+                    {% endif %}
+                </button>
+                <a class="navbar-brand page-scroll" {% if page.url == "/" %} href="#page-top" {% else %} href="/" {% endif %}><img class="logo" src="/img/logos/cogensoft-name-yellow.png"></a>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                {%if page.url == "/" %}
+                    <div class="navbar-mobile-connector">
+                        <img class="navigation-piece mobile down hidden" src="/img/cogensoft-icons/cogensoft-mob-nav-down.png">
+                        <img class="navigation-piece mobile connector hidden" src="/img/cogensoft-icons/cogensoft-mob-nav-connector.png">
+                    </div>
+                {% endif %}
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden" data-slug="welcome">
+                        <a {% if page.url == "/" %} href="#page-top" {% else %} href="/" {% endif %}></a>
+                    </li>
+                    <li data-slug="about" data-xs-length="40" data-md-length="455" data-lg-length="515">
+                        <a class="page-scroll" href="{% if page.url != "/" %}/{% endif %}#about">About</a>
+                    </li>
+                    <li data-slug="technology" data-xs-length="100" data-md-length="350" data-lg-length="395">
+                        <a class="page-scroll" href="{% if page.url != "/" %}/{% endif %}#technology">Technology</a>
+                    </li>
+                    <li data-slug="values" data-xs-length="160" data-md-length="240" data-lg-length="275">
+                        <a class="page-scroll" href="{% if page.url != "/" %}/{% endif %}#values">Values</a>
+                    </li>
+                    <li data-slug="projects" data-xs-length="221" data-md-length="145" data-lg-length="165">
+                        <a class="page-scroll" href="{% if page.url != "/" %}/{% endif %}#projects">Projects</a>
+                    </li>
+                    <li data-slug="contact" data-xs-length="283" data-md-length="35" data-lg-length="50">
+                        <a class="page-scroll" href="{% if page.url != "/" %}/{% endif %}#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+</nav>

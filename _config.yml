@@ -1,0 +1,63 @@
+url: https://cogensoft.co.uk
+baseurl:
+
+sass:
+  style: compressed
+
+# Site settings
+company: Cogensoft
+title: Cogensoft - Building Web Connections
+email: contact@cogensoft.co.uk
+description: "Cogensoft is a Bournemouth based Web Development company working with Bournemouth Web Agencies and Businesses to develop software and solutions with Magento, Laravel and Wordpress"
+
+# Technology
+technologies:
+- heading: E-Commerce Platforms
+  text: We craft besoke solutions with Magento 2.x and Wordpress to enable you to engage with your customers
+  icon: fa fa-shopping-cart
+- heading: PHP Frameworks
+  text: We build sites and solutions in Laravel, CakePHP, Symfony and CodeIgniter to reduce ypur cost of ownership
+  icon: fa fa-code
+- heading: Javascript Libraries
+  text: We have vast experience in selecting the right JS Library to ensure a smooth and consistant journey for your users
+  icon: fab fa-js-square
+- heading: HTML5 Standards
+  text: We follow the latest HTML5 standards to ensure our solutions are responsive across the widest range of devices
+  icon: fab fa-html5
+
+
+# Team names, titles and social links
+values:
+- heading: Reliability
+  text: Building reliable software is not about bug fixing, it is about following best practice to ensure the code is well structured and designed to provide meaningful responses in all circumstances.
+  icon: fa fa-check
+- heading: Extensibility
+  text: The world in which you do business is constantly changing, the software your business relies upon should be structured so that it can easily be adapted to react to those changes.
+  icon: fa fa-sync-alt
+- heading: Security
+  text: The integrity of your business depends upon the integrity of the software which processes your data, data security is all about understanding the threats and building well structured, defensive code.
+  icon: fa fa-lock
+- heading: Clarity
+  text: Software quality is not measured in lines of code, it is all about building solutions with a well defined and easy to follow structure which are easy to test, support and maintain.
+  icon: fa fa-lightbulb
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: github
+    url: https://github.com/cogensoft-uk
+  - title: twitter
+    url: https://twitter.com/CogensoftBH
+  - title: facebook
+    url: https://www.facebook.com/cogensoft.uk
+  - title: linkedin
+    url: https://www.linkedin.com/company/cogensoft-uk
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Sea Road, Bournemouth
+  - line: Dorset, BH5 1SL
+
+# Build settings
+markdown: kramdown
+permalink: pretty

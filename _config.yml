@@ -13,16 +13,16 @@ description: "Cogensoft is a Bournemouth based Web Development company working w
 # Technology
 technologies:
 - heading: E-Commerce Platforms
-  text: We craft besoke solutions with Magento 2.x and Wordpress to enable you to engage with your customers
+  text: We craft besoke solutions with Magento 2.x and Wordpress to enable you to engage with your customers.
   icon: fa fa-shopping-cart
 - heading: PHP Frameworks
-  text: We build sites and solutions in Laravel, CakePHP, Symfony and CodeIgniter to reduce ypur cost of ownership
+  text: We build sites and solutions in Laravel, CakePHP, Symfony and CodeIgniter to reduce ypur cost of ownership.
   icon: fa fa-code
 - heading: Javascript Libraries
-  text: We have vast experience in selecting the right JS Library to ensure a smooth and consistant journey for your users
+  text: We have vast experience in selecting the right JS Library to ensure a smooth and consistent journey for your users.
   icon: fab fa-js-square
 - heading: HTML5 Standards
-  text: We follow the latest HTML5 standards to ensure our solutions are responsive across the widest range of devices
+  text: We follow the latest HTML5 standards to ensure our solutions are responsive across the widest range of devices.
   icon: fab fa-html5
 
 
